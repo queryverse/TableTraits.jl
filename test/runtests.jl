@@ -1,9 +1,7 @@
 using TableTraits
+using IteratorInterfaceExtensions
 using NamedTuples
 using Base.Test
-
-immutable MyType
-end
 
 @testset "TableTraits" begin
 
@@ -12,8 +10,6 @@ other_array = [1,2,3]
 
 @test isiterabletable(table_array)
 @test !isiterabletable(other_array)
-
-@test_throws ErrorException getiterator(MyType())
 
 iter = getiterator(table_array)
 @test TableTraits.column_names(iter) == [:a]
