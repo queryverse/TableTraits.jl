@@ -6,7 +6,7 @@ using IteratorInterfaceExtensions
 
 export getiterator, isiterable, isiterabletable
 
-isiterabletable{T}(x::T) = isiterable(x) && Base.iteratoreltype(x)==Base.HasEltype() && Base.eltype(x)<: NamedTuple
+isiterabletable(x::T) where {T} = isiterable(x) && Base.iteratoreltype(x)==Base.HasEltype() && Base.eltype(x)<: NamedTuple
 
 include("utilities.jl")
 
