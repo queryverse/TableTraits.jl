@@ -4,7 +4,7 @@ module TableTraits
 using NamedTuples
 using IteratorInterfaceExtensions
 
-export getiterator, isiterable, isiterabletable, supports_columns_copy,
+export getiterator, isiterable, isiterabletable, supports_get_columns_copy,
     get_columns_copy
 
 # Iterable table trait
