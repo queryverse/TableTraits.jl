@@ -10,6 +10,7 @@ other_array = [1,2,3]
 
 @test isiterabletable(table_array)
 @test !isiterabletable(other_array)
+@test !supports_get_columns_copy(table_array)
 
 iter = getiterator(table_array)
 @test TableTraits.column_names(iter) == [:a]
