@@ -1,3 +1,6 @@
+# TableTraits.jl v0.2.0 Release Notes
+* Add get_columns_view interface
+
 # TableTraits.jl v0.1.0 Release Notes
 * Add get_columns_copy interface
 
