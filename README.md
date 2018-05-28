@@ -10,5 +10,4 @@
 
 TableTraits defines a  generic interface for tabular data.
 
-See [IterableTables.jl](https://github.com/davidanthoff/IterableTables.jl)
-for documentation.
+This package is documented [here](http://www.david-anthoff.com/jl4ds/stable/tabletraits.html).
