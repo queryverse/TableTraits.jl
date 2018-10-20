@@ -2,7 +2,10 @@ module TableTraits
 
 using IteratorInterfaceExtensions
 
-export isiterabletable, supports_get_columns_copy, get_columns_copy, supports_get_columns_view, get_columns_view
+export isiterabletable
+export supports_get_columns_copy, get_columns_copy
+export supports_get_columns_copy_using_missing, get_columns_copy_using_missing
+export supports_get_columns_view, get_columns_view
 
 # Iterable table trait
 
@@ -21,6 +24,12 @@ end
 supports_get_columns_copy(x::T) where {T} = false
 
 function get_columns_copy end
+
+# Column copy trait using Missing
+
+supports_get_columns_copy_using_missing(x::T) where {T} = false
+
+function get_columns_copy_using_missing end
 
 # Column view trait
 

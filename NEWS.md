@@ -1,3 +1,6 @@
+# TableTraits.jl v0.4.0 Release Notes
+* Add get_columns_copy_using_missing interface
+
 # TableTraits.jl v0.3.1 Release Notes
 * Remove precompile statement
 

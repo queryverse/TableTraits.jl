@@ -13,5 +13,6 @@ without_eltype = (i for i in table_array)
 @test isiterabletable(without_eltype)===missing
 @test !supports_get_columns_copy(table_array)
 @test !supports_get_columns_view(table_array)
+@test !supports_get_columns_copy_using_missing(table_array)
 
 end
