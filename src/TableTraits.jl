@@ -13,7 +13,14 @@ function isiterabletable(x::T) where {T}
     isiterable(x) || return false
 
     if Base.IteratorEltype(x)==Base.HasEltype()
-        return Base.eltype(x) <: NamedTuple
+        et = Base.eltype(x)
+        if et <: NamedTuple
+            return true
+        elseif et===Any
+            return missing
+        else
+            return false
+        end
     else
         return missing
     end
