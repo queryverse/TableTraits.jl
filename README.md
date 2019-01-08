@@ -10,4 +10,4 @@
 
 TableTraits defines a  generic interface for tabular data.
 
-This package is documented [here](http://www.david-anthoff.com/jl4ds/stable/tabletraits.html).
+This package is documented [here](http://www.david-anthoff.com/jl4ds/stable/tabletraits/).
