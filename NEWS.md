@@ -1,3 +1,7 @@
+# TableTraits.jl v1.0.0 Release Notes
+* Drop julia 0.7 support
+* Migrate to Project.toml
+
 # TableTraits.jl v0.4.1 Release Notes
 * Fix isiterabletable for Vector{Any}
 
