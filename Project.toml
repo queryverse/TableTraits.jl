@@ -1,0 +1,16 @@
+name = "TableTraits"
+uuid = "3783bdb8-4a98-5b6b-af9a-565f29a5fe9c"
+version = "1.0.0-DEV"
+
+[deps]
+IteratorInterfaceExtensions = "82899510-4779-5014-852e-03e436cf321d"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+IteratorInterfaceExtensions = "1"
+julia = "1"
