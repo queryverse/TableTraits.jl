@@ -1,6 +1,6 @@
 name = "TableTraits"
 uuid = "3783bdb8-4a98-5b6b-af9a-565f29a5fe9c"
-version = "1.0.0-DEV"
+version = "1.0.1-DEV"
 
 [deps]
 IteratorInterfaceExtensions = "82899510-4779-5014-852e-03e436cf321d"
