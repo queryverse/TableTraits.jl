@@ -10,6 +10,7 @@ other_array = [1,2,3]
 without_eltype = (i for i in table_array)
 
 @test isiterabletable(table_array)
+@test isiterabletable((NamedTuple{(:x, :y), T} where T)[(x=1, y=1)])
 @test !isiterabletable(other_array)
 @test isiterabletable(without_eltype)===missing
 @test isiterabletable(any_table_array)===missing
