@@ -16,5 +16,6 @@ without_eltype = (i for i in table_array)
 @test !supports_get_columns_copy(table_array)
 @test !supports_get_columns_view(table_array)
 @test !supports_get_columns_copy_using_missing(table_array)
+@test isiterabletable(Union{}[]) == false
 
 end

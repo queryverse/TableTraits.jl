@@ -14,7 +14,9 @@ function isiterabletable(x::T) where {T}
 
     if Base.IteratorEltype(x)==Base.HasEltype()
         et = Base.eltype(x)
-        if et <: NamedTuple
+        if et === Union{}
+            return false
+        elseif et <: NamedTuple
             return true
         elseif et===Any
             return missing
