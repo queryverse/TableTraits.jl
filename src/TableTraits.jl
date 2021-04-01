@@ -7,6 +7,10 @@ export supports_get_columns_copy, get_columns_copy
 export supports_get_columns_copy_using_missing, get_columns_copy_using_missing
 export supports_get_columns_view, get_columns_view
 
+# Taken from Setfield.jl
+@generated constructor_of(::Type{T}) where T =
+    getfield(parentmodule(T), nameof(T))
+
 # Iterable table trait
 
 function isiterabletable(x::T) where {T}
@@ -14,7 +18,7 @@ function isiterabletable(x::T) where {T}
 
     if Base.IteratorEltype(x)==Base.HasEltype()
         et = Base.eltype(x)
-        if et <: NamedTuple
+        if constructor_of(et) === NamedTuple
             return true
         elseif et===Any
             return missing
