@@ -18,7 +18,7 @@ function isiterabletable(x::T) where {T}
             return false
         elseif et <: NamedTuple
             return true
-        elseif et === Any
+        elseif et===Any
             return missing
         else
             return false
