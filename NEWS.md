@@ -1,3 +1,6 @@
+# TableTraits.jl v1.0.1 Release Notes
+* Fix isiterabletable to return false for iterators with element type Union{}
+
 # TableTraits.jl v1.0.0 Release Notes
 * Drop julia 0.7 support
 * Migrate to Project.toml
