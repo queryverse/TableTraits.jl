@@ -3,3 +3,7 @@
 *.jl.mem
 .vscode
 lcov.info
+docs/build/
+docs/Manifest.toml
+test-output*.*
+Manifest.toml
